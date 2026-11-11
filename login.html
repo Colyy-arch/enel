@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+
+        <title>Área de Login</title>
+         <link href="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js">
+     <link rel="stylesheet" href="login.css">
+
+    
+
+    <body class="pagina-login">
+        <!--barra rosa e barra preta-->
+        <style>
+            .cabecalho-fixo{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                z-index: 1000;
+            }
+    
+        .barra-rosa{
+          background-color:#ff0f64;
+          height: 25px;
+          width:100%;
+        }
+        .barra-preta{
+            background-color: rgba(0, 0, 0, 0.932);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content:flex-start;
+            padding: 0 20px;
+            font-family:'Plus Jakarta Sans', sans-serif;
+        }
+        .logo-1{
+            font-weight: bold;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color: #b4afaf;
+        }
+        .separador{
+            color:#fff;
+            margin: 0 10px;
+            font-weight: 300;
+        }
+        .logo-2{
+            font-weight: bold;
+            font-size: 11px;
+            letter-spacing: 1px;
+            color:#fff;
+        }
+        body{
+            margin: 0;
+            padding-top: 80px;
+        }
+       
+    </style>
+</head>
+<body class="pagina-login">
+
+    <header class="cabecalho-fixo">
+        <div class="barra-rosa"></div>
+        <div class="barra-preta">
+           <span class="logo-1"> ENEL </span>
+           <span class="separador">|</span>
+           <span class="logo-2"> ENEL CEARÁ </span>
+        </div>
+
+        <!---formulario--->
+        <section class="login-section">
+            <h1>Login</h1>
+            <div class="botao-container">
+            <button  id="btn-pessoas"> Pessoas </button>
+            <button  id="btn-empresas"> Empressa </button>
+        </div>
+        <form> 
+            <select name="logins" id="lgs">
+                <option value="login-com-email"> Login com email</option>
+                <option value="login-com-celular"> Login com celular</option>
+            </select>
+        </form>
+        </section>
+
+        <!--Acesso com email e login-->
+<section>
+        <p>E-mail</p>
+        <div class="caixa-texto" id="caixa1">
+            <form>
+                <input type="text">
+            </form>
+        <p>Senha</p>
+            <div class="caixa-senha" id="caixa2">
+                <form>
+                    <input type="password" id="senha">
+                </form>
+                <p class="dica-senha">A senha é composta por letras, números
+                    e caracteres especiais</p>
+            </div>
+            </section>
+
+<!--Botão de acesso e recuperar conta-->
+<section>
+            <div class="caixa-acesso" id="acessar">
+            <button class="btn-acessar" id="botao-acessar"> Acessar </button>
+            <div class="recuperar-senha"></div>
+                <a href="#" id="senha-esquecida"> Esqueci minha senha</a>
+            <div class="recuperar-usuário">
+            |<a href="#" id="usuário-esquecido">Esqueci meu Usuário</a>
+</section>
+
+<!--Botões de acesso alternativo-->
+<section>
+    <div class="botão-alternativo" id="btn-alternativo">
+        <button class="botao-do-google" id="btn-google">Entre com o Google</button>
+        <button class="botao-do-face" id="btn-facebook">Entre com o Facebook</button>
+    </div>
+
+</section>
+
+        
+     </div>
+    </header>
+</body>
+</html>

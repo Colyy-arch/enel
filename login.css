@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+ }
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+ }
+
+.login-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap:10px;
+}
+
+.login-section input{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+}
+
+.dica-senha{
+    font-size: 0.85rem;
+    max-width: 250px;
+}
+
+.botao-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    }
